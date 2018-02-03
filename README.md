@@ -1,5 +1,5 @@
 # dq
-PHP delay queue based on Redis. Just For FUN.
+PHP delay queue based on Redis. Just For Study.
 
 ## Install
 
