@@ -19,5 +19,6 @@
         "psr-4": {
             "DQ\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
