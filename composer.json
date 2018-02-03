@@ -1,0 +1,21 @@
+{
+    "name": "outman/dq",
+    "description": "PHP delay queue based on Redis.",
+    "type": "library",
+    "require": {
+        "predis/predis": "^1.1",
+        "ramsey/uuid": "^3.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outman",
+            "email": "pochonlee@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DQ\\": "src/"
+        }
+    }
+}
