@@ -1,11 +1,22 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-$queue = new DQ\Client\Queue([
+$redisParams = [
     'scheme' => 'tcp',
     'host'   => '127.0.0.1',
     'port'   => 6379,
-]);
+];
+
+$config = [
+    'params' => $redisParams, // Predis/Client $params
+    // 'options' => [] // Predis/Client $options
+    // 'bucketCount' => DQ::DEFAULT_BUCKET_THREAD
+    // 'queueName' => DQ::DEFAULT_QUEUE,
+    // 'bucketPrefix' => DQ::DEFAULT_QUEUE_BUCKET,
+    // 'partialCount' => DQ::HASH_PARTIAL,
+];
+
+$queue = new DQ\Client\Queue($config);
 
 //// enqueue
 for ($i = 0; $i <= 10000; $i ++) {
