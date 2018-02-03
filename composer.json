@@ -2,10 +2,12 @@
     "name": "outman/dq",
     "description": "PHP delay queue based on Redis.",
     "type": "library",
+    "homepage": "https://github.com/outman/dq",
     "require": {
         "predis/predis": "^1.1",
         "ramsey/uuid": "^3.7"
     },
+    "keywords": ["redis", "delayqueue", "queue"],
     "license": "MIT",
     "authors": [
         {
