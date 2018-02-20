@@ -1,7 +1,7 @@
 <?php
 namespace DQ\Exceptions;
 
-class PCNTLException extends Exception
+class PCNTLException extends \Exception
 {
 
 }
